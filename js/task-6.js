@@ -10,6 +10,7 @@ const destroyBtn = document.querySelector("[data-destroy]");
 const boxesContainer = document.querySelector("#boxes");
 
 function createBoxes(amount) {
+  destroyBoxes();
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     box.classList.add("box");
